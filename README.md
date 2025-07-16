@@ -25,8 +25,12 @@ backend/
 ├── logs/                # Onde os dados capturados serão armazenados
 │   └── login.csv
 ├── src/                 # Código-fonte
-│   ├── index.ts         # Arquivo principal
-│   └── swagger.ts       # Setup do Swagger (modularizado)
+│   ├── index.ts         # Inicialização do servidor
+│   ├── swagger.ts       # Setup do Swagger
+│   ├── routes/          # Rotas da aplicação
+│   │   └── loginRoutes.ts
+│   └── controllers/     # Lógica de captura de login
+│       └── loginController.ts
 ├── swagger.json         # Documentação da API (OpenAPI)
 ├── .env                 # Configurações de ambiente (porta, etc.)
 ├── tsconfig.json        # Configuração do TypeScript
@@ -41,7 +45,7 @@ backend/
 1. Clone o projeto:
 
 ```bash
-git clone https://github.com/heclair/backend_seginfo/tree/master
+git clone https://github.com/heclair/backend_seginfo.git
 cd backend
 ```
 
@@ -51,7 +55,13 @@ cd backend
 npm install
 ```
 
-3. Rode o projeto em modo desenvolvimento:
+3. Crie um arquivo `.env` com a porta desejada (exemplo abaixo):
+
+```env
+PORT=3000
+```
+
+4. Rode o projeto em modo desenvolvimento:
 
 ```bash
 npm run dev
@@ -80,7 +90,7 @@ Captura os dados enviados pelo frontend falso.
 "Login recebido"
 ```
 
-As credenciais serão armazenadas no arquivo: `logs/login.csv`.
+As credenciais (com timestamp e IP) serão armazenadas no arquivo: `logs/login.csv`.
 
 ---
 
