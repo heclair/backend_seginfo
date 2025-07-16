@@ -51,13 +51,7 @@ cd backend-simulador-login
 npm install
 ```
 
-3. Crie o arquivo `.env`:
-
-```env
-PORT=3000
-```
-
-4. Rode o projeto em modo desenvolvimento:
+3. Rode o projeto em modo desenvolvimento:
 
 ```bash
 npm run dev
