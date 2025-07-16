@@ -41,8 +41,8 @@ backend/
 1. Clone o projeto:
 
 ```bash
-git clone https://github.com/seuusuario/backend-simulador-login.git
-cd backend-simulador-login
+git clone https://github.com/heclair/backend_seginfo/tree/master
+cd backend
 ```
 
 2. Instale as dependências:
