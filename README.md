@@ -110,15 +110,6 @@ Este projeto **não deve ser utilizado para capturar dados reais de terceiros**.
 
 ---
 
-## 🧑‍🏫 Sugestão para Aula
-
-1. Mostrar uma tela espelho do login da faculdade (em frontend separado).
-2. Redirecionar para este backend.
-3. Demonstrar como os dados são salvos no `login.csv`.
-4. Debater com os alunos como evitar esses ataques.
-
----
-
 ## 📄 Licença
 
 Este projeto é apenas para **fins educacionais**. Uso indevido é de responsabilidade do usuário.
