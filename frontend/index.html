@@ -5,77 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      body {
-        font-family: Verdana, sans-serif;
-        margin: 0;
-      }
-
-      .form-label {
-        color: #4169e1;
-        font-size: 0.8rem;
-        padding-right: 10px;
-        white-space: nowrap;
-      }
-
-      input[name="username"] {
-        width: 168px;
-        padding: 6px;
-        border: 1px solid #ccc;
-        background-color: #f5faff;
-        font-family: Verdana, sans-serif;
-      }
-
-      input[name="password"] {
-        width: 254px;
-        padding: 6px;
-        border: 1px solid #ccc;
-        background-color: #f5faff;
-        font-family: Verdana, sans-serif;
-      }
-
-      .btn-entrar {
-        background-color: #3366cc;
-        color: white;
-        font-weight: bold;
-        border: none;
-        width: 100px;
-        height: 35px;
-        padding: 6px 24px;
-        cursor: pointer;
-        margin-bottom: 8px;
-      }
-
-      .link-ajuda {
-        font-size: 0.85rem;
-        color: #0000ee;
-        text-decoration: underline;
-      }
-
-      .tentativas-box {
-        border: 1px solid #ccc;
-        width: 60px;
-        height: 90px;
-        text-align: center;
-        font-family: Verdana, sans-serif;
-        font-weight: bold;
-        color: #3366cc;
-      }
-
-      .tentativas-box small {
-        display: block;
-        font-weight: normal;
-        font-size: 0.75rem;
-      }
-
-      .linhasenha {
-        margin-bottom: 22px;
-      }
-
-      table {
-        margin-top: 60px;
-      }
-    </style>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header id="header">
@@ -91,7 +21,7 @@
       >
         <tr>
           <td width="500" align="left" valign="top">
-            <form action="/login" method="POST">
+            <form id="login-form">
               <table cellpadding="6" cellspacing="0">
                 <tr>
                   <td class="form-label">Usuário</td>
@@ -105,7 +35,6 @@
                     <input type="password" name="password" />
                   </td>
                 </tr>
-
                 <tr>
                   <td></td>
                   <td>
@@ -125,12 +54,14 @@
           </td>
           <td width="100" align="center" valign="top">
             <div class="tentativas-box">
-              5
+              <div class="numero">5</div>
               <small>tentativas</small>
             </div>
           </td>
         </tr>
       </table>
     </center>
+
+    <script src="script.js"></script>
   </body>
 </html>
