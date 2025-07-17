@@ -1,4 +1,4 @@
-# 🔐 Backend Simulador de Captura de Login (Segurança da Informação)
+# 🔐 Simulador de Phishing Educacional — Captura de Login Falsa (Segurança da Informação)
 
 Este projeto foi desenvolvido com fins **educacionais** para uma aula de **Segurança da Informação**, com o objetivo de demonstrar como ataques de engenharia social (como phishing) podem ser estruturados tecnicamente. O backend simula o funcionamento de um servidor malicioso que registra credenciais digitadas em uma tela de login falsa (espelho).
 
@@ -15,12 +15,20 @@ Este projeto foi desenvolvido com fins **educacionais** para uma aula de **Segur
 - Swagger UI
 - Nodemon
 - CSV via `fs` (módulo nativo do Node)
+- HTML
+- CSS
+- JavaScript
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```text
+frontend/               # Frontend estático (HTML, CSS, JS)
+├── img/
+├── index.html
+├── styles.css
+└── script.js
 backend/
 ├── logs/                # Onde os dados capturados serão armazenados
 │   └── login.csv
@@ -34,8 +42,8 @@ backend/
 ├── swagger.json         # Documentação da API (OpenAPI)
 ├── .env                 # Configurações de ambiente (porta, etc.)
 ├── tsconfig.json        # Configuração do TypeScript
-├── package.json
-└── README.md
+└── package.json
+README.md
 ```
 
 ---
@@ -66,6 +74,8 @@ PORT=3000
 ```bash
 npm run dev
 ```
+
+5. Abra o frontend: abra o arquivo frontend/index.html no navegador (não precisa de servidor web, é estático).
 
 ---
 
